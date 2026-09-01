@@ -1,0 +1,181 @@
+# Project 2: The Server Commander
+
+## DecodeLabs Cloud Computing Internship
+
+### Project Overview
+
+The Server Commander is a cloud infrastructure project completed as part of the DecodeLabs Cloud Computing Internship.
+
+The objective of this project was to launch, secure, and configure a Linux-based virtual server on AWS. The server was accessed securely using SSH, configured with the Nginx web server, and used to host a custom webpage.
+
+---
+
+## Project Objective
+
+The main objective of this project was to gain practical experience with cloud server deployment and administration.
+
+The project involved:
+
+* Launching an Amazon EC2 virtual machine
+* Configuring a Security Group for secure network access
+* Connecting to the Linux server using SSH
+* Installing and configuring the Nginx web server
+* Hosting a custom "Welcome to DecodeLabs" webpage
+* Accessing the deployed website through the EC2 public IPv4 address
+
+---
+
+## Technologies Used
+
+* Amazon Web Services (AWS)
+* Amazon EC2
+* Amazon Linux
+* Linux Web Server
+* SSH
+* HTML
+* GitHub
+
+---
+
+## Project Architecture
+
+text
+User
+  |
+  | HTTP Request
+  v
+Amazon EC2 Instance
+  |
+  v
+Amazon Linux
+  |
+  v
+Liunx Web Server
+  |
+  v
+Custom HTML Website
+  |
+  v
+Welcome to DecodeLabs
+
+
+---
+
+## Implementation Steps
+
+### 1. Launching the EC2 Instance
+
+An Amazon EC2 instance was launched using Amazon Linux as the operating system.
+
+The instance was configured to act as a Linux-based cloud server for hosting the website.
+
+### 2. Configuring the Security Group
+
+A custom Security Group was configured with the following inbound rules:
+
+* SSH - Port 22 - Restricted to my IP address
+* HTTP - Port 80 - Allowed from Anywhere IPv4
+
+This configuration allowed secure server administration through SSH and public access to the hosted website.
+
+### 3. Connecting to the Server Using SSH
+
+The EC2 instance was accessed securely from a local computer using SSH and an EC2 key pair.
+
+The connection provided command-line access to the Amazon Linux server.
+
+### 4. Installing Linux
+
+The Linux web server was installed on the Amazon Linux EC2 instance using the command line.
+
+The server was started and configured to start automatically when the EC2 instance boots.
+
+### 5. Verifying the Web Server
+
+The Linux service was checked using system commands to confirm that it was active and running.
+
+The default Linux  webpage was successfully accessed through the EC2 instance's public IPv4 address.
+
+### 6. Deploying the Custom Website
+
+The default Linux webpage was replaced with a custom HTML webpage containing the message:
+
+*Welcome to DecodeLabs*
+
+The webpage also displays the project name, server status, and technologies used in the deployment.
+
+### 7. Public Website Access
+
+The final custom website was successfully accessed through the EC2 instance's public IPv4 address using a web browser.
+
+---
+
+## Security Configuration
+
+The EC2 Security Group was configured with only the required inbound access:
+
+| Service | Port | Access        |
+| ------- | ---: | ------------- |
+| SSH     |   22 | My IP         |
+| HTTP    |   80 | Anywhere IPv4 |
+
+This allowed secure administration access while making the website publicly accessible.
+
+---
+
+## Screenshots
+
+The screenshots folder contains evidence of the complete project implementation:
+
+1. EC2 instance successfully launched and running
+2. Security Group inbound rules
+3. Successful SSH connection to Amazon Linux
+4. Linux service running
+5. Default Nginx webpage accessible publicly
+6. Custom Welcome to DecodeLabs webpage successfully deployed
+
+---
+
+## Project Structure
+
+text
+Project-2-The-Server-Commander/
+│
+├── website/
+│   └── index.html
+│
+├── screenshots/
+│   ├── 01-Ec2-instance-running
+│   ├── 02-security-group-rules
+│   ├── 03-ssh-connection
+│   ├── 04-Limux-running
+│   ├── 05-Decodelabs-custom-website
+│
+└── README.md
+
+
+---
+
+## Result
+
+The project was successfully completed by deploying a custom webpage on an Amazon EC2 instance running Amazon Linux and Nginx.
+
+This project provided practical experience in:
+
+* Cloud server deployment
+* Virtual machine administration
+* Linux command-line operations
+* SSH connectivity
+* Security Group configuration
+* Web server installation and management
+* Static website hosting on a virtual server
+
+---
+
+## Internship
+
+*DecodeLabs Cloud Computing Internship*
+
+*Project 2: The Server Commander*
+
+🚀 Successfully completed a cloud-based Linux server deployment and custom website hosting project
